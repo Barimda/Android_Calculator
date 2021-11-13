@@ -2,5 +2,6 @@
 <resources>
     <dimen name="zero">0dp</dimen>
     <dimen name="margin_keyboard">254dp</dimen>
+    <dimen name="margin_keyboard_landscape">150dp</dimen>
     <dimen name="keyboardTextSize">30sp</dimen>
 </resources>
