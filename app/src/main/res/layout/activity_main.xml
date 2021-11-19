@@ -13,13 +13,15 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bg" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatToggleButton
         android:id="@+id/btnSettings"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:text="Settings" />
+        android:text="@string/settingsText"
+        android:textOff="@string/SettingsOffText"
+        android:textOn="@string/SettingsOnText" />
 
     <TextView
         android:id="@+id/calculationsText"
