@@ -17,9 +17,9 @@
     <string name="multiply">x</string>
     <string name="devision">/</string>
     <string name="backspace">←</string>
-    <string name="settings">Settings</string>
+    <string name="settings">Настройки</string>
     <string name="clear_all">C</string>
-    <string name="settingsText">Settings</string>
-    <string name="SettingsOffText">Скругление OFF</string>
-    <string name="SettingsOnText">Скругление ON</string>
+    <string name="settingsText">Настройки</string>
+    <string name="SettingsOffText">Скругление ВКЛ</string>
+    <string name="SettingsOnText">Скругление ВЫКЛ</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="keyboard" parent="@style/Widget.MaterialComponents.Button">
+    <style name="Keyboard" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">@dimen/keyboardTextSize</item>
         <item name="android:layout_height">@dimen/zero</item>
         <item name="android:layout_width">@dimen/zero</item>
@@ -11,19 +11,19 @@
         <item name="cornerRadius">@dimen/zero</item>
     </style>
 
-    <style name="numKeyboard" parent="keyboard">
+    <style name="NumKeyboard" parent="Keyboard">
         <item name="backgroundTint">#9C9C9C</item>
     </style>
 
-    <style name="logKeyboard" parent="keyboard">
+    <style name="LogKeyboard" parent="Keyboard">
         <item name="backgroundTint">#FFA000</item>
     </style>
 
-    <style name="logKeyboard.Colored" parent="logKeyboard">
+    <style name="LogKeyboard.Colored" parent="LogKeyboard">
         <item name="backgroundTint">#474747</item>
     </style>
 
-    <style name="keyboard.circle" parent="@style/Widget.MaterialComponents.Button">
+    <style name="Keyboard.Circle" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">@dimen/keyboardTextSize</item>
         <item name="android:layout_height">@dimen/zero</item>
         <item name="android:layout_width">@dimen/zero</item>
@@ -34,15 +34,15 @@
         <item name="cornerRadius">1500dp</item>
     </style>
 
-    <style name="numKeyboard.circle" parent="keyboard.circle">
+    <style name="NumKeyboard.Circle" parent="Keyboard.Circle">
         <item name="backgroundTint">#E25648D6</item>
     </style>
 
-    <style name="logKeyboard.circle" parent="keyboard.circle">
+    <style name="LogKeyboard.Circle" parent="Keyboard.Circle">
         <item name="backgroundTint">#DAFFE600</item>
     </style>
 
-    <style name="logKeyboard.circle.Colored" parent="logKeyboard.circle">
+    <style name="LogKeyboard.Circle.Colored" parent="LogKeyboard.Circle">
         <item name="backgroundTint">#E900AA3E</item>
     </style>
 </resources>
