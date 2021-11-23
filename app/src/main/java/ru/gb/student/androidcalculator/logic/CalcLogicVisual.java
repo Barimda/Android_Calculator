@@ -3,6 +3,8 @@ package ru.gb.student.androidcalculator.logic;
 import android.view.View;
 import android.widget.*;
 
+import androidx.appcompat.widget.TooltipCompat;
+
 import ru.gb.student.androidcalculator.R;
 
 public class CalcLogicVisual {

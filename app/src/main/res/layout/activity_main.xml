@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <ImageView
@@ -13,13 +14,13 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bg" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSettings"
-        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:text="Settings" />
+        android:text="@string/settingsText" />
 
     <TextView
         android:id="@+id/calculationsText"
@@ -50,9 +51,9 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/margin_keyboard">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num0"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/numDot"
@@ -61,9 +62,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num2"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num1"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_1"
             app:layout_constraintBottom_toTopOf="@+id/num0"
             app:layout_constraintEnd_toStartOf="@+id/num2"
@@ -72,9 +73,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num4"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num2"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_2"
             app:layout_constraintBottom_toTopOf="@+id/num0"
             app:layout_constraintEnd_toStartOf="@+id/num3"
@@ -83,9 +84,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num5"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num3"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_3"
             app:layout_constraintBottom_toTopOf="@+id/numDot"
             app:layout_constraintEnd_toStartOf="@+id/numPlus"
@@ -94,9 +95,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num6"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num4"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_4"
             app:layout_constraintBottom_toTopOf="@+id/num1"
             app:layout_constraintEnd_toStartOf="@+id/num5"
@@ -105,9 +106,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num7"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num5"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_5"
             app:layout_constraintBottom_toTopOf="@+id/num2"
             app:layout_constraintEnd_toStartOf="@+id/num6"
@@ -116,9 +117,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num8"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num6"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_6"
             app:layout_constraintBottom_toTopOf="@+id/num3"
             app:layout_constraintEnd_toStartOf="@+id/numPlus"
@@ -127,9 +128,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num9"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num9"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_9"
             app:layout_constraintBottom_toTopOf="@+id/num6"
             app:layout_constraintEnd_toStartOf="@+id/numMinus"
@@ -138,9 +139,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numMultiply"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num8"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_8"
             app:layout_constraintBottom_toTopOf="@+id/num5"
             app:layout_constraintEnd_toStartOf="@+id/num9"
@@ -149,9 +150,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numDimen"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/num7"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/_7"
             app:layout_constraintBottom_toTopOf="@+id/num4"
             app:layout_constraintEnd_toStartOf="@+id/num8"
@@ -160,9 +161,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numClear"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numDot"
-            style="@style/numKeyboard"
+            style="@style/NumKeyboard"
             android:text="@string/dot"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/numResult"
@@ -171,9 +172,9 @@
             app:layout_constraintTop_toBottomOf="@+id/num3"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numResult"
-            style="@style/logKeyboard.Colored"
+            style="@style/LogKeyboard.Colored"
             android:text="@string/result"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -182,9 +183,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numPlus"
             app:layout_constraintVertical_weight="2" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numBackspace"
-            style="@style/logKeyboard"
+            style="@style/LogKeyboard"
             android:text="@string/backspace"
             app:layout_constraintBottom_toTopOf="@+id/numMinus"
             app:layout_constraintEnd_toEndOf="parent"
@@ -193,9 +194,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numMinus"
-            style="@style/logKeyboard"
+            style="@style/LogKeyboard"
             android:text="@string/minus"
             app:layout_constraintBottom_toTopOf="@+id/numPlus"
             app:layout_constraintEnd_toEndOf="parent"
@@ -204,9 +205,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numBackspace"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numPlus"
-            style="@style/logKeyboard"
+            style="@style/LogKeyboard"
             android:text="@string/plus"
             app:layout_constraintBottom_toTopOf="@+id/numResult"
             app:layout_constraintEnd_toEndOf="parent"
@@ -215,9 +216,9 @@
             app:layout_constraintTop_toBottomOf="@+id/numMinus"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numDimen"
-            style="@style/logKeyboard"
+            style="@style/LogKeyboard"
             android:text="@string/devision"
             app:layout_constraintBottom_toTopOf="@+id/num8"
             app:layout_constraintEnd_toStartOf="@+id/numMultiply"
@@ -226,9 +227,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numMultiply"
-            style="@style/logKeyboard"
+            style="@style/LogKeyboard"
             android:text="@string/multiply"
             app:layout_constraintBottom_toTopOf="@+id/num9"
             app:layout_constraintEnd_toStartOf="@+id/numBackspace"
@@ -237,9 +238,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_weight="1" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/numClear"
-            style="@style/logKeyboard.Colored"
+            style="@style/LogKeyboard.Colored"
             android:hapticFeedbackEnabled="false"
             android:text="@string/clear_all"
             app:layout_constraintBottom_toTopOf="@+id/num7"

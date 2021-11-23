@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="numKeyboard" parent="@style/Widget.AppCompat.Button.Colored">
+    <style name="Keyboard" parent="@style/Widget.MaterialComponents.Button">
         <item name="android:textSize">@dimen/keyboardTextSize</item>
-<!--        <item name="backgroundTint">#A1959595</item>-->
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:insetTop">@dimen/dp1</item>
+        <item name="android:insetBottom">@dimen/dp1</item>
+        <item name="android:insetLeft">@dimen/dp1</item>
+        <item name="android:insetRight">@dimen/dp1</item>
+        <item name="cornerRadius">@dimen/zero</item>
+    </style>
+
+    <style name="NumKeyboard" parent="Keyboard">
         <item name="backgroundTint">#9C9C9C</item>
-        <item name="android:layout_height">@dimen/zero</item>
-        <item name="android:layout_width">@dimen/zero</item>
     </style>
 
-    <style name="logKeyboard" parent="@style/Widget.AppCompat.Button.Colored">
-        <item name="android:textSize">@dimen/keyboardTextSize</item>
+    <style name="LogKeyboard" parent="Keyboard">
         <item name="backgroundTint">#FFA000</item>
-        <item name="android:layout_height">@dimen/zero</item>
-        <item name="android:layout_width">@dimen/zero</item>
     </style>
 
-    <style name="logKeyboard.Colored" parent="logKeyboard">
+    <style name="LogKeyboard.Colored" parent="LogKeyboard">
         <item name="backgroundTint">#474747</item>
+    </style>
+
+    <style name="Keyboard.Circle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textSize">@dimen/keyboardTextSize</item>
+        <item name="android:layout_height">@dimen/zero</item>
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:insetTop">@dimen/dp5</item>
+        <item name="android:insetBottom">@dimen/dp5</item>
+        <item name="android:insetLeft">@dimen/dp5</item>
+        <item name="android:insetRight">@dimen/dp5</item>
+        <item name="cornerRadius">1500dp</item>
+    </style>
+
+    <style name="NumKeyboard.Circle" parent="Keyboard.Circle">
+        <item name="backgroundTint">#E25648D6</item>
+    </style>
+
+    <style name="LogKeyboard.Circle" parent="Keyboard.Circle">
+        <item name="backgroundTint">#DAFFE600</item>
+    </style>
+
+    <style name="LogKeyboard.Circle.Colored" parent="LogKeyboard.Circle">
+        <item name="backgroundTint">#E900AA3E</item>
     </style>
 </resources>
